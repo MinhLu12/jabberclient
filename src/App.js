@@ -5,7 +5,7 @@ export default class App extends React.Component {
   state = {}
 
   componentDidMount() {
-    axios.get(`http://localhost:5000/test`)
+    axios.get(`http://localhost:5000/api/users`)
       .then(res => {
         const testText = res.data;
         this.setState({ testText });
