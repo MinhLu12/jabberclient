@@ -8,7 +8,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:51162/test`)
+    axios.get(`http://localhost:5000/test`)
       .then(res => {
         const persons = res.data;
         console.log(persons)
